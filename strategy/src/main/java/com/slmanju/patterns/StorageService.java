@@ -1,6 +1,6 @@
 package com.slmanju.patterns;
 
-public class StorageService implements FileService {
+public class StorageService {
 
     private FileService fileService;
 
@@ -13,12 +13,10 @@ public class StorageService implements FileService {
     }
 
 
-    @Override
     public void retrieve() {
         fileService.retrieve();
     }
 
-    @Override
     public void save() {
         fileService.save();
     }
